@@ -16,7 +16,7 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
     step="0.0001"
     value={value}
     onChange={(e) => handleChange(e, name)}
-    className="my-2 w-full rounded-sm p-2 outline-none bg-transparent text-white border-none text-sm white-glassmorphism"
+    className="my-2 w-full rounded-sm p-2 outline-none bg-transparent text-white border-none text-sm blue-glassmorphism"
   />
 );
 
@@ -93,7 +93,7 @@ const Welcome = () => {
               </div>
             </div>
           </div>
-          <div className="p-5 sm:w-96 w-full flex flex-col justify-start items-center blue-glassmorphism">
+          <div className="p-5 sm:w-96 w-full flex flex-col justify-start items-center input-box rounded-2xl">
             <Input placeholder="Address To" name="addressTo" type="text" handleChange={handleChange} />
             <Input placeholder="Amount (ETH)" name="amount" type="number" handleChange={handleChange} />
             <Input placeholder="Keyword (Gif)" name="keyword" type="text" handleChange={handleChange} />
